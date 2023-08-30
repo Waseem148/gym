@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waseem Fitness</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway">
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(gymLogo.jpg);
+        }
+        .left{
+            display: inline-block;
+           /* border: 2px solid red;*/
+            position: absolute;  
+            left: 34px;
+            
+        }
+        .left img{
+        
+            width: 100px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+        }
+        .mid{ 
+            display: block;
+            width: 50%;
+            margin:20px  auto;
+           /* border: 2px solid green;*/
+            font-family: 'Baloo Bhai',cursive;
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 30px;
+            display: inline-block;
+         /*   border: 2px solid yellow;*/
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover , .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .btn{
+            font-family: 'Baloo Bhai',cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(207, 40, 40);
+        }
+        .container{
+            border: 2px solid white;;
+            margin: 106px 80px;
+            padding: 75px ;
+            width: 33%;
+            border-radius: 28px;
+
+        }
+        .container h1{
+            text-align: center;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+            font-family: 'Baloo Bhai',cursive;
+
+        }
+        .container button{
+            display: block;
+            width: 100%;
+            margin:20px  auto;
+        }
+    </style>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+          <img src="QURESHI GYM.png" alt="">
+        </div>
+         <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+               </ul>
+        </div>
+         <!--right box for button-->
+        <div class="right">
+           <button class="btn">call us Now</button>
+           <button class="btn">E-mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 > join best gym in meerut </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+              <div>  <input type="text" name="" placeholder="Enter name"></div>
+              <div>  <input type="text" name="" placeholder="Enter age"></div>
+              <div>
+                <input type="text" name="" placeholder="Enter gender">
+
+            </div>
+            <div>
+                <input type="number" name="" placeholder="Phone Number">
+            </div>
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
